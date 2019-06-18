@@ -777,7 +777,7 @@ func resourceAwsKinesisFirehoseDeliveryStream() *schema.Resource {
 									},
 									"input_format_configuration": {
 										Type:     schema.TypeList,
-										Required: true,
+										Optional: true,
 										MaxItems: 1,
 										Elem: &schema.Resource{
 											Schema: map[string]*schema.Schema{
@@ -835,7 +835,7 @@ func resourceAwsKinesisFirehoseDeliveryStream() *schema.Resource {
 									},
 									"output_format_configuration": {
 										Type:     schema.TypeList,
-										Required: true,
+										Optional: true,
 										MaxItems: 1,
 										Elem: &schema.Resource{
 											Schema: map[string]*schema.Schema{
@@ -984,7 +984,7 @@ func resourceAwsKinesisFirehoseDeliveryStream() *schema.Resource {
 									},
 									"schema_configuration": {
 										Type:     schema.TypeList,
-										Required: true,
+										Optional: true,
 										MaxItems: 1,
 										Elem: &schema.Resource{
 											Schema: map[string]*schema.Schema{
